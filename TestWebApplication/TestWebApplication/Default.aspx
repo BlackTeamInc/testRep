@@ -10,50 +10,49 @@
 </head>
 
 <body>
-    <div class="login_page_center">
-        <header>
-            <asp:Image runat="server" />
-            <img alt="techsupport_img" class="techsupport_img" src="Images/techsupport.jpg" />
-        </header>
+    <header>
+        <asp:Image runat="server" />
+        <img alt="techsupport_img" class="techsupport_img" src="Images/techsupport.jpg" />
+    </header>
 
-        <form id="form1" runat="server">
-            <div>
-                <table border="0" cellpadding="5" cellspacing="0">
-                    <tr>
-                        <td>Login:
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtBoxLogin" runat="server"></asp:TextBox>
-                        </td>
-                        <td>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
-                                ControlToValidate="txtBoxLogin" Display="Dynamic"
-                                ErrorMessage="Login is required field." ForeColor="Red">
-                            </asp:RequiredFieldValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password:
-                        </td>
-                        <td>
-                            <asp:TextBox ID="txtBoxPassword" TextMode="Password" runat="server"></asp:TextBox>
-                        </td>
-                        <td>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
-                                ControlToValidate="txtBoxPassword" Display="Dynamic"
-                                ErrorMessage="Password is required field." ForeColor="Red">
-                            </asp:RequiredFieldValidator>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <asp:Button ID="btnLogin" runat="server" Text="Login" />
-                        </td>
-                    </tr>
-                </table>
+    <form id="form1" runat="server">
 
-            </div>
-        </form>
-    </div>
+        <table border="0" cellpadding="5" cellspacing="0">
+            <tr>
+                <td>
+                    Login:
+                </td>
+                <td>
+                    <asp:TextBox ID="txtBoxLogin" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                        ControlToValidate="txtBoxLogin" Display="Dynamic"
+                        ErrorMessage="Login is required field." ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <asp:TextBox ID="txtBoxPassword" TextMode="Password" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+                        ControlToValidate="txtBoxPassword" Display="Dynamic"
+                        ErrorMessage="Password is required field." ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <asp:Button ID="btnLogin" OnClick="Button_Click" runat="server" Text="Login" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
 </body>
 </html>
