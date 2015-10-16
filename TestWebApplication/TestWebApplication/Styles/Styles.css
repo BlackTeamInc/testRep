@@ -1,9 +1,18 @@
 ﻿body {
 
 
+
+}
+.techsupport_img {
+  
+    width: auto;
+    height: 127px;
 }
 
-.techsupport_img {
-    width: 395px;
-    height: 127px;
+.login_page_center {
+
+    align-content:center;
+    border-style: solid;
+    border-width: 2px;
+
 }
