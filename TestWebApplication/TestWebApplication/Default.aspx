@@ -6,13 +6,13 @@
 
 <head runat="server">
     <title>Tech Support</title>
-    <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <link href="Styles.css" rel="stylesheet" type="text/css" />   
 </head>
 
 <body>
-    <header>
-        <%--should insert an image in there instead--%>
-        <h1>Welcome to TechSupport!</h1>
+    <header>        
+        <asp:Image runat="server" />
+        <img alt="techsupport_img" class="techsupport_img" src="Images/techsupport.jpg" />
     </header>
 
     <form id="form1" runat="server">
@@ -26,9 +26,10 @@
                         <asp:TextBox ID="txtBoxLogin" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <%--Validation goes in there--%>
-                        <%--<td colspan ="2" align ="center">
-                <asp:Label ID="ErrorLabel" ForeColor="Red" runat="server" Text="Error!" Visible="False"></asp:Label>--%>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                             ControlToValidate ="txtBoxLogin" Display="Dynamic"
+                             ErrorMessage="Login is required field." ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -39,17 +40,17 @@
                         <asp:TextBox ID="txtBoxPassword" TextMode="Password" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <%--Validation goes in there--%>
-                        <%--<td colspan ="2" align ="center">
-                <asp:Label ID="Label1" ForeColor="Red" runat="server" Text="Error!" Visible="False"></asp:Label>--%>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                             ControlToValidate ="txtBoxPassword" Display="Dynamic"
+                             ErrorMessage="Password is required field." ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
                         <asp:Button ID="btnLogin" runat="server" Text="Login" />
-                    </td>
                 </tr>
-            </table>
+                </table>
 
         </div>
     </form>
