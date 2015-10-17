@@ -6,18 +6,18 @@
 
 <head runat="server">
     <title>Tech Support</title>
-    <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
     <asp:Image runat="server" />
-        <img class="techsupport_img" alt="techsupport_img" src="Images/techsupport.jpg" />
-
+    <img class="techsupport_img" alt="techsupport_img" src="Images/techsupport.jpg" />
 </head>
 
 <body>
     <section>
         <form id="form1" runat="server">
-            <table class="table_log" border="0" cellpadding="5" cellspacing="0">
+            <table class="table_log" border="0" cellpadding="7" cellspacing="0">
                 <tr>
-                    <td>Login:
+                    <td class="td_right">
+                        Login:
                     </td>
                     <td>
                         <asp:TextBox ID="txtBoxLogin" runat="server"></asp:TextBox>
@@ -30,7 +30,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Password:
+                    <td class="td_right">
+                        Password:
                     </td>
                     <td>
                         <asp:TextBox ID="txtBoxPassword" TextMode="Password" runat="server"></asp:TextBox>
