@@ -8,7 +8,7 @@
     <title>Tech Support</title>
     <link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
     <asp:Image runat="server" />
-    <img class="techsupport_img" alt="techsupport_img" src="Images/techsupport.jpg" />
+    <img class="techsupport_img" alt="techsupport_img" src="/Images/techsupport.jpg" />
 </head>
 
 <body>
