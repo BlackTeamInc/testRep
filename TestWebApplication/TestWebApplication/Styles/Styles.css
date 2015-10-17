@@ -34,10 +34,11 @@ section {
 
 /* the styles for classes */
 
-#btnLogin {
+.button {
  
-    width: 100px;
+    width: 200px;
     align-self: center;
+    color: red;
     
 
 }

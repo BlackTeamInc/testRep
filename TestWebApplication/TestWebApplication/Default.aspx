@@ -7,13 +7,12 @@
 <head runat="server">
     <title>Tech Support</title>
     <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <asp:Image runat="server" />
+        <img class="techsupport_img" alt="techsupport_img" src="Images/techsupport.jpg" />
+
 </head>
 
 <body>
-    <header>
-        <asp:Image runat="server" />
-        <img class="techsupport_img" alt="techsupport_img" src="Images/techsupport.jpg" />
-    </header>
     <section>
         <form id="form1" runat="server">
             <table class="table_log" border="0" cellpadding="5" cellspacing="0">
@@ -45,7 +44,7 @@
                 </tr>
                 <tr>
                     <td class="colspan" colspan="2">
-                        <asp:Button ID="btnLogin" OnClick="Button_Click" runat="server" Text="Login" />
+                        <asp:Button ID="btnLogin" CssClass="button" OnClick="Button_Click" runat="server" Text="Login" />
                     </td>
                 </tr>
             </table>
