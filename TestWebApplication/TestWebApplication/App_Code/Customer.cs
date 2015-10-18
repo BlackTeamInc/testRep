@@ -32,14 +32,13 @@ namespace TestWebApplication.App_Code
             }
             set
             {
-                customeID = value;
+                customerID = value;
             }
         }
 
         public string CustomerName
-        {
-            get;
-            set;
-        }
+        
+        {get;set;}
+        
     }
 }
