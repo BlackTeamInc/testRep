@@ -5,24 +5,22 @@ using System.Web;
 
 namespace TestWebApplication.App_Code
 {
-    public class Registration
+    public class Customer
     {
         // private fields
         private int customerID;
-        private string productCode;
-        private string registrationDate;
+        private string customerName;
 
         // default constructor
-        public Registration()
+        public Customer()
         {
         }
 
         // custom constructor
-        public Registration(int customerID, string productCode, string registrationDate)
+        public Customer(int customerID, string customerName)
         {
             this.CustomerID = customerID;
-            this.ProductCode = productCode;
-            this.RegistrationDate = registrationDate;
+            this.CustomerName = customerName;
         }
 
         // properties of the class
@@ -34,24 +32,14 @@ namespace TestWebApplication.App_Code
             }
             set
             {
-                customerID = value;
+                customeID = value;
             }
         }
 
-        public string ProductCode
+        public string CustomerName
         {
             get;
             set;
         }
-
-        public string RegistrationDate
-        {
-            get;
-            set;
-        }
-        
-
-
     }
 }
-
