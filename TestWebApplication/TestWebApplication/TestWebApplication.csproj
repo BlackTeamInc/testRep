@@ -68,6 +68,7 @@
     <Content Include="App_Code\Product.cs" />
     <Content Include="App_Code\Customer.cs" />
     <Content Include="App_Code\TestClass.cs" />
+    <Content Include="App_Code\TestingClassNumberTwo.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
